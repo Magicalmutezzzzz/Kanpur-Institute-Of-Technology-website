@@ -1,56 +1,195 @@
-<!doctype.html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Admission for Bachelor in Business Administration(BBA)</title>
-    </head>
-    <body bgcolor="skyblue"><form>
-        <H1>Student Personal Information for admission in Bachelor Of  Business Administration(BBA)</H1>
+<head>
+   <title>Admission for Bachelor in Business Administration (BBA)</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #87CEFA;
+        }
+
+        header {
+            background-color: #005d6e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+     
+        form {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 20px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="text"]:focus, input[type="number"]:focus {
+            outline: none;
+            border-color: #005d6e;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            font-size: 20px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    
+        marquee {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+       
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer a {
+            color: white;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
 
         
+        @media (max-width: 768px) {
+            form {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            button {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Admission for Bachelor in Business Administration (BBA)</h1>
+</header>
 
 
-<marquee scrollamount="25"> <img src="C:\Users\ASHISH YADAV\OneDrive\Desktop\webimg\download.png" width="300" height="300"></img> </marquee><br><br><br><br>
+    <img src="BBA.jpg" alt="BBA Admission">
 
 
+<form id="admissionForm">
+    <h2 style="text-align:center;">Student Personal Information for BBA Admission</h2>
 
-	<li> <label for="First Name" style="font-size: 20px">First Name:</label>
-        <input type="text" id="First Name"></li><br>
+    <label for="FirstName">First Name:</label>
+    <input type="text" id="FirstName" name="FirstName" required>
 
-         <li><label for="last Name" style="font-size: 20px">Last Name:</label>
-        <input type="text" id="last Name"></li><br>
+    <label for="LastName">Last Name:</label>
+    <input type="text" id="LastName" name="LastName" required>
 
-         <li><label for="Father's Name" style="font-size: 20px">Father's Name:</label>
-        <input type="text" id="Father's Name"></li><br>
+    <label for="FathersName">Father's Name:</label>
+    <input type="text" id="FathersName" name="FathersName" required>
 
-         <li><label for="Mother's Name" style="font-size: 20px">Mother's Name:</label>
-        <input type="text" id="Mother's Name"></li><br>
+    <label for="MothersName">Mother's Name:</label>
+    <input type="text" id="MothersName" name="MothersName" required>
 
-         <li><label for="Date of Birth" style="font-size: 20px">Date of Birth:</label>
-        <input type="text,number" id="Date of Birth"></li><br>
+    <label for="DOB">Date of Birth:</label>
+    <input type="text" id="DOB" name="DOB" required>
 
-         <li><label for="Name of School" style="font-size: 20px">Name of last school attended:</label>
-        <input type="text" id="Name of School"></li><br>
+    <label for="SchoolName">Name of last school attended:</label>
+    <input type="text" id="SchoolName" name="SchoolName" required>
 
-         <li><label for="Board of xii" style="font-size: 20px">Board in class 12th:</label>
-        <input type="text" id="board"></li><br>
+    <label for="Board12th">Board in class 12th:</label>
+    <input type="text" id="Board12th" name="Board12th" required>
 
-         <li><label for="Score in Class XII" style="font-size: 20px">Score in Senior Secondary Examination(in %): </label>
-        <input type="number" id="Marks in class 12th"></li><br>
+    <label for="Marks12th">Score in Senior Secondary Examination (in %):</label>
+    <input type="number" id="Marks12th" name="Marks12th" required>
 
-         <li><label for="Board of x" style="font-size: 20px">Board in class 10th:</label>
-        <input type="text" id="board"></li><br>
-        
-         <li><label for="Score in Class X" style="font-size: 20px">Score in High School Examination(in %): </label>
-        <input type="number" id="Marks in class 10th"></li><br>
-        
-         <li><label for="Course" style="font-size: 20px">Course/Program Student opt for:</label>
-        <input type="text" id="Program type"></li><br>
+    <label for="Board10th">Board in class 10th:</label>
+    <input type="text" id="Board10th" name="Board10th" required>
 
-         <li><label for="stream" style="font-size: 20px">Stream for the opted course(Finance/Operations/Marketing/Human Resources):</label>
-        <input type="text" id="Stream"><br><br>
+    <label for="Marks10th">Score in High School Examination (in %):</label>
+    <input type="number" id="Marks10th" name="Marks10th" required>
 
-        <button type="submit" style="font-size: 30px;">Submit</button>
+    <label for="Program">Course/Program Student Opts For:</label>
+    <input type="text" id="Program" name="Program" required>
 
-        </form>
+    <label for="Stream">Stream for the opted course (Finance/Operations/Marketing/Human Resources):</label>
+    <input type="text" id="Stream" name="Stream" required><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<footer>
+    <p>
+        <a href="https://www.kit.ac.in/admission-enquiry/">Admissions</a> |
+        <a href="https://www.kit.ac.in/contact-us/">Contact Us</a> |
+        <a href="https://www.kit.ac.in/kit/">Kanpur</a>
+    </p>
+</footer>
+
+<script>
+  
+    document.getElementById('admissionForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+	    
+        let allFieldsFilled = true;
+        const formElements = document.querySelectorAll('#admissionForm input');
+        formElements.forEach(input => {
+            if (input.value.trim() === '') {
+                allFieldsFilled = false;
+            }
+        });
+
+        if (allFieldsFilled) {
+            alert("Form submitted successfully. We will contact you shortly.");
+            this.reset();
+        } else {
+            alert("Please fill out all the fields before submitting.");
+        }
+    });
+</script>
+
 </body>
 </html>
