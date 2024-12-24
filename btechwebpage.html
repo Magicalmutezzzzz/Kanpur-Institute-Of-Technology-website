@@ -1,56 +1,217 @@
-<!doctype.html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Admission for Bachelor in Technology</title>
-    </head>
-    <body bgcolor="skyblue"><form>
-        <H1>Student Personal Information for admission in Bachelor Of Technology</H1>
-	
+<head>
+    <title>Admission for Bachelor in Technology</title>
+    <style>
+        body {
+            background-color: #87CEFA;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #005d6e;
+            color: white;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        form ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        form li {
+            margin: 15px 0;
+        }
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"], input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: border 0.3s ease;
+        }
+        input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            font-size: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .feedback {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+<body>
 
-<marquee scrollamount="25"> <img src="C:\Users\ASHISH YADAV\OneDrive\Desktop\webimg\images.png" width="600" height="350"></img> </marquee>
+<header>
+    <h1>Student Personal Information for Admission in Bachelor of Technology</h1>
+</header>
 
+<div class="image-container">
+    <marquee scrollamount="25">
+        <img src="images.png" alt="Bachelor of Technology" />
+    </marquee>
+</div>
 
+<form id="admissionForm" action="#" method="POST">
+    <div class="form-section">
+        <ul>
+            <li>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </li>
+            <li>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </li>
+            <li>
+                <label for="fatherName">Father's Name:</label>
+                <input type="text" id="fatherName" name="fatherName" required>
+            </li>
+            <li>
+                <label for="motherName">Mother's Name:</label>
+                <input type="text" id="motherName" name="motherName" required>
+            </li>
+            <li>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </li>
+            <li>
+                <label for="schoolName">Name of Last School Attended:</label>
+                <input type="text" id="schoolName" name="schoolName" required>
+            </li>
+            <li>
+                <label for="boardXII">Board in Class 12th:</label>
+                <input type="text" id="boardXII" name="boardXII" required>
+            </li>
+            <li>
+                <label for="scoreXII">Score in Senior Secondary Examination (%):</label>
+                <input type="number" id="scoreXII" name="scoreXII" min="0" max="100" required>
+            </li>
+            <li>
+                <label for="boardX">Board in Class 10th:</label>
+                <input type="text" id="boardX" name="boardX" required>
+            </li>
+            <li>
+                <label for="scoreX">Score in High School Examination (%):</label>
+                <input type="number" id="scoreX" name="scoreX" min="0" max="100" required>
+            </li>
+            <li>
+                <label for="program">Course/Program Student Opts For:</label>
+                <input type="text" id="program" name="program" required>
+            </li>
+            <li>
+                <label for="stream">Stream for the Opted Course (CS/CS-AIML/IT/ME/EE/BIOTECH):</label>
+                <input type="text" id="stream" name="stream" required>
+            </li>
+        </ul>
+    </div>
+    <button type="submit">Submit</button>
+</form>
 
-       <li> <label for="First Name" style="font-size: 20px">First Name:</label>
-        <input type="text" id="First Name"></li><br>
+<div class="feedback" id="feedbackMessage"></div>
 
-         <li><label for="last Name" style="font-size: 20px">Last Name:</label>
-        <input type="text" id="last Name"></li><br>
+<script>
+    const form = document.getElementById("admissionForm");
+    const feedbackMessage = document.getElementById("feedbackMessage");
 
-         <li><label for="Father's Name" style="font-size: 20px">Father's Name:</label>
-        <input type="text" id="Father's Name"></li><br>
+    
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
 
-         <li><label for="Mother's Name" style="font-size: 20px">Mother's Name:</label>
-        <input type="text" id="Mother's Name"></li><br>
+        let isValid = true;
+        let errors = [];
 
-         <li><label for="Date of Birth" style="font-size: 20px">Date of Birth:</label>
-        <input type="text,number" id="Date of Birth"></li><br>
+        const firstName = document.getElementById("firstName").value;
+        const lastName = document.getElementById("lastName").value;
+        const fatherName = document.getElementById("fatherName").value;
+        const motherName = document.getElementById("motherName").value;
+        const dob = document.getElementById("dob").value;
+        const schoolName = document.getElementById("schoolName").value;
+        const boardXII = document.getElementById("boardXII").value;
+        const scoreXII = document.getElementById("scoreXII").value;
+        const boardX = document.getElementById("boardX").value;
+        const scoreX = document.getElementById("scoreX").value;
+        const program = document.getElementById("program").value;
+        const stream = document.getElementById("stream").value;
 
-         <li><label for="Name of School" style="font-size: 20px">Name of last school attended:</label>
-        <input type="text" id="Name of School"></li><br>
+      
+        if (!firstName || !lastName || !fatherName || !motherName || !dob || !schoolName || !boardXII || !scoreXII || !boardX || !scoreX || !program || !stream) {
+            isValid = false;
+            errors.push("All fields must be filled out.");
+        }
 
-         <li><label for="Board of xii" style="font-size: 20px">Board in class 12th:</label>
-        <input type="text" id="board"></li><br>
+       
+        if (scoreXII < 0 || scoreXII > 100 || scoreX < 0 || scoreX > 100) {
+            isValid = false;
+            errors.push("Scores must be between 0 and 100.");
+        }
 
-         <li><label for="Score in Class XII" style="font-size: 20px">Score in Senior Secondary Examination(in %): </label>
-        <input type="number" id="Marks in class 12th"></li><br>
+       
+        if (isValid) {
+            feedbackMessage.textContent = "Form submitted successfully!";
+            feedbackMessage.className = "success";
+            feedbackMessage.style.color = "green";
+        } else {
+            feedbackMessage.innerHTML = errors.join("<br>");
+            feedbackMessage.className = "error";
+            feedbackMessage.style.color = "red";
+        }
+    });
+</script>
 
-         <li><label for="Board of x" style="font-size: 20px">Board in class 10th:</label>
-        <input type="text" id="board"></li><br>
-        
-         <li><label for="Score in Class X" style="font-size: 20px">Score in High School Examination(in %): </label>
-        <input type="number" id="Marks in class 10th"></li><br>
-        
-         <li><label for="Course" style="font-size: 20px">Course/Program Student opt for:</label>
-        <input type="text" id="Program type"></li><br>
-
-         <li><label for="stream" style="font-size: 20px">Stream for the opted course(CS/CS-AIML/IT/ME/EE/BIOTECH):</label>
-        <input type="text" id="Stream"></li><br>
-	
-	
-        <button type="submit" style="font-size: 30px;">Submit</button>
-
-
-        </form>
-    </body>
+</body>
 </html>
