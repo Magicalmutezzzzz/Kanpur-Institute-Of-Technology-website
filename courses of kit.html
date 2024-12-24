@@ -1,77 +1,225 @@
-<!doctype.html>
+<!DOCTYPE html>
 <html>
-<head><title>Courses we offer</title>
-</head>
-<body bgcolor="skyblue">
+<head>
+    <title>Courses We Offer - Kanpur Institute of Technology</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #87CEFA;
+            color: #333;
+        }
 
+        header {
+            background-color: #005d6e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            font-size: 3em;
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+       
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section h2, section h3, section h4, section h5 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .course-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .course-card {
+            width: 320px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: scale(1.05);
+        }
+
+        .course-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .course-card h3 {
+            background-color: #005d6e;
+            color: white;
+            padding: 10px;
+            font-size: 1.8em;
+            text-align: center;
+        }
+
+        .course-card p {
+            padding: 15px;
+            font-size: 1.2em;
+            text-align: justify;
+        }
+
+        .course-card a {
+            display: block;
+            text-align: center;
+            margin: 15px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+
+        .course-card a:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+   
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .course-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .course-card {
+                width: 90%;
+            }
+
+            footer {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
 
 <header>
-<table align=center width=2000 height=100>
-<tr bgcolor=darkblue> <th align= center colspan=8 >
-<img height=200 width=400 src="KITLOGO.jpeg" align=left><br><br>
-<font size="300" color="white"><B>Courses Offered By Kanpur Institute of Technology</B></font></img></th></tr>
-</table></header><br><br><br>
+    <img src="KITLOGO.jpeg" alt="Kanpur Institute of Technology Logo" />
+    <h1>Courses Offered by Kanpur Institute of Technology</h1>
+</header>
+
+<section>
+    <h2>Click on the Program to Enroll</h2>
+    <div class="course-container">
+       
+        <div class="course-card">
+            <a href="btechwebpage.html">
+                <img src="images.png" alt="B.Tech Program" />
+                <h3>Bachelor of Technology (B.Tech)</h3>
+            </a>
+            <p>Explore our Bachelor of Technology programs in various specializations. Join us to start your career in the engineering domain.</p>
+            <a href="btechwebpage.html">Enroll Now</a>
+        </div>
+
+        <div class="course-card">
+            <a href="mbawebpage.html">
+                <img src="mba.png" alt="MBA Program" />
+                <h3>Masters in Business Administration (MBA)</h3>
+            </a>
+            <p>Advance your career with an MBA from KIT. Gain leadership skills and business knowledge that will set you apart in the corporate world.</p>
+            <a href="mbawebpage.html">Enroll Now</a>
+        </div>
 
 
+        <div class="course-card">
+            <a href="bbawebpage.html">
+                <img src="download.png" alt="BBA Program" />
+                <h3>Bachelor of Business Administration (BBA)</h3>
+            </a>
+            <p>The BBA program provides students with essential business skills, making them ready for managerial roles in various sectors.</p>
+            <a href="bbawebpage.html">Enroll Now</a>
+        </div>
 
+       
+        <div class="course-card">
+            <a href="Bpharmwebpage.html">
+                <img src="pharmacy.jpg" alt="Pharmacy Program" />
+                <h3>Pharmacy</h3>
+            </a>
+            <p>Our Pharmacy program offers extensive knowledge and practical skills to help you become a licensed professional in the field of pharmacy.</p>
+            <a href="Bpharmwebpage.html">Enroll Now</a>
+        </div>
 
+       
+        <div class="course-card">
+            <a href="diplomawebpage.html">
+                <img src="diploma.png" alt="Diploma Program" />
+                <h3>Diploma Courses</h3>
+            </a>
+            <p>Our diploma programs provide specialized education and training to help you excel in various technical fields.</p>
+            <a href="diplomawebpage.html">Enroll Now</a>
+        </div>
+    </div>
+</section>
 
-
-
-<p style="font-size: 60px"><b>Click on the Program to Enroll</b></p>
-
-
-
-
-<h1 align="left" style="font-size: 50px"><a href="btechwebpage.html"><img src="images.png" width="350" height="250"></img> </a>  <img src="aboutbtech.jpg" width="900" height="450"  align="right"></img>
-</h1><br><br><br><br><br><br><br><BR><br><br><br><br><br><br><br><BR><br><br><br><br><br><br><br><BR><br><br><br>
-
-
-
-
-
-<h2 align="left" style="font-size: 50px"><a href="mbawebpage.html"><img src= "mba.jpg" width="250" height="250"></img> </a>  <img src="aboutmba.png" width="1100" height="450" align="right"></img></h2><br><br><br><br><BR><br><br><br>
-
-
-
-
-
-<br><br><br><br><BR><br><br><br><BR><br><br><br><br><br><h3 align="left" style="font-size: 50px"><a href="bbawebpage.html?"><img src= "download.png" width="250" height="250"></img></a> <img src="aboutbba.png" width="1100" height="450" align="right"></img></h3><br><br><br>
-
-
-
-
-
-
-
-<br><br><br><br><BR><br><br><br><BR><br><br><br><br><br><h4 align="Left" style="font-size: 50px"><a href="Bpharmwebpage.html"><img src= "pharmacy.png" width="300" height="250"></img></a> <img src="aboutpharmacy.png" width="1100" height="450" align="right"></img><br>Pharmacy</h4><br><br><br>
-
-
-
-
-
-
-<br><br><br><br><BR><br><br><br><BR><br><br><br><br><br>
-
-<h5 align="left" style="font-size: 50px"><a href="diplomawebpage.html"><img src="diploma.png" width="250" height="250"></img></a> <img src="aboutdiploma.png" width="1100" height="450" align="right"></img></h5><br>
-
-
-<br><br><br><br><BR><br><br><br><BR><br><br><br><br><br><br><br><br><br><BR><br><br><br><BR><br><br><br><br><br>
-
-
-<p>
-<footer align="center" style="background-color:black "font-size:60px";>
-
-
-<a href="https://www.kit.ac.in/admission-enquiry/"><b>Admissions</b></a><br><br>
-
-<a href="https://www.kit.ac.in/contact-us/"><b>Contact Us </b></a><br><br>
-
-<a href="https://www.kit.ac.in/kit/"><b>Kanpur</b></a>
-</p>
+<footer>
+    <p>
+        <a href="https://www.kit.ac.in/admission-enquiry/">Admissions</a> |
+        <a href="https://www.kit.ac.in/contact-us/">Contact Us</a> |
+        <a href="https://www.kit.ac.in/kit/">Kanpur</a>
+    </p>
 </footer>
 
 
-</center>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+   
+    function enrollAlert() {
+        alert("Thank you for choosing a course! We will contact you with further details.");
+    }
+</script>
+
 </body>
-<html>
+</html>
