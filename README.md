@@ -1,7 +1,9 @@
 # Kanpur Institute of Technology Website 🎓
 
 ## Overview ✨
-This is the official website for **Kanpur Institute of Technology**, designed to provide students, faculty, and visitors with essential information about the institute. The website includes sections such as Admissions, Courses, Departments, Campus Life, and Contact Information.
+This is the unofficial website for **Kanpur Institute of Technology**, designed to provide students, faculty, and visitors with essential information about the institute. The website includes sections such as Admissions, Courses, Departments, Campus Life, and Contact Information.
+
+Created as my first project under subject *FUNDAMENTAL OF WEB DESIGNING* 
 
 ## Features 🚀
 - **Responsive Design** – Works across all devices (Desktop, Tablet, Mobile).
